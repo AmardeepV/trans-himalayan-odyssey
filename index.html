@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Small-group motorcycle journeys through Ladakh and the Himalayas, personally ridden and hosted by a fellow rider." />
+    <title>Trans-Himalayan Odyssey — Ride Beyond the Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .hero-image { background-image: url('assets/himalayan-motorcycle-group-hero.png'); background-position:center; animation: cinematic-pullback 6s cubic-bezier(.18,.72,.25,1) both; }
+      .card-one .card-image { background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80'); background-position:center 58%; }
+      .about-photo { background-image: url('assets/rider.jpg'); background-position:center 78%; }
+      .principles-visual { grid-column:1 / -1; position:relative; min-height:235px; margin:0; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; padding:30px 38px; color:var(--cream); background:radial-gradient(circle at 72% 18%, rgba(199,93,60,.75) 0 2px, transparent 3px), radial-gradient(circle at 21% 67%, rgba(244,241,233,.7) 0 2px, transparent 3px), linear-gradient(120deg, #1b2922, #31473a); }
+      .principles-visual::before { content:''; position:absolute; inset:0; opacity:.22; background-image:linear-gradient(133deg, transparent 0 42%, #e7ddcd 42.3% 42.8%, transparent 43% 65%, #e7ddcd 65.3% 65.7%, transparent 66%), linear-gradient(35deg, transparent 0 52%, #e7ddcd 52.3% 52.7%, transparent 53%); }
+      .principles-visual p,.principles-visual span { position:relative; margin:0; }.principles-visual p { font:clamp(27px,3.2vw,43px) 'Playfair Display',serif; letter-spacing:-.045em; }.principles-visual span { margin-top:9px; color:#eeb18f; font:10px 'DM Mono',monospace; text-transform:uppercase; letter-spacing:.1em; }
+      @keyframes cinematic-pullback { from { transform:scale(1.28); } to { transform:scale(1); } }
+    </style>
+  </head>
+  <body>
+    <div class="page-grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Trans-Himalayan Odyssey home">
+        <svg viewBox="0 0 52 42" aria-hidden="true"><path d="M2 35 18 8l8 13 7-10 17 24"/><path d="M11 35h30"/></svg>
+        <span>Trans-Himalayan<br /><em>Odyssey</em></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#journeys">Journeys</a><a href="#why-us">The way we ride</a><a href="#about">Stories</a><a class="nav-cta" href="contact.html">Plan a ride <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-image" role="img" aria-label="Motorcycle road winding through Himalayan mountains"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow light">Ladakh · Indian Himalayas · Small groups</p>
+          <h1>Not just a tour.<br /><i>A shared road.</i></h1>
+          <p class="hero-copy">Motorcycle journeys through the high Himalayas, led from the saddle by someone who believes the best adventures are made together.</p>
+          <a class="button button-light" href="#journeys">Explore the journeys <span>↓</span></a>
+        </div>
+        <div class="hero-foot"><span>34° 09' N · 77° 34' E</span><span>Scroll to begin</span></div>
+      </section>
+
+      <section class="intro" id="why-us">
+        <div class="section-label"><span>01</span> The difference</div>
+        <div class="intro-body">
+          <p class="display-copy">You won't follow a guide from a distance. <em>We'll be riding beside you.</em></p>
+          <div class="intro-detail"><p>Trans-Himalayan Odyssey is for riders who want to go beyond the standard itinerary. We take the long road, pause for the good light, share chai with locals, and ride a route that feels like an adventure—not a production.</p><a class="text-link" href="hosts.html">Meet your riding host <span>→</span></a></div>
+        </div>
+      </section>
+
+      <section class="journeys" id="journeys">
+        <div class="section-heading"><div><p class="eyebrow">02 · Pick your horizon</p><h2>Himalayan <i>journeys</i></h2></div><p>Three ways to enter the mountains. All routes are paced for the road, the weather and the stories that happen between.</p></div>
+        <div class="trip-grid">
+          <article class="trip-card card-one"><div class="card-image" role="img" aria-label="Mountain road in the Himalayas"></div><div class="card-content"><div class="card-meta"><span>04 days</span><span>Introduction</span></div><h3>High Pass<br />Sampler</h3><p>A vivid first taste of Ladakh: high roads, quiet monasteries and four generous days that change your idea of distance.</p><a href="contact.html?journey=High%20Pass%20Sampler" aria-label="Enquire about High Pass Sampler">Discover the route <span>↗</span></a></div></article>
+          <article class="trip-card featured card-two"><div class="card-image"></div><div class="card-content"><div class="card-meta"><span>07 days</span><span>Signature ride</span></div><h3>Ladakh<br />Unbound</h3><p>A week of sweeping valleys, dramatic passes and the rare luxury of having time to actually be there.</p><a href="contact.html?journey=Ladakh%20Unbound" aria-label="Enquire about Ladakh Unbound">Discover the route <span>↗</span></a></div></article>
+          <article class="trip-card card-three"><div class="card-image"></div><div class="card-content"><div class="card-meta"><span>14 days</span><span>For the restless</span></div><h3>Beyond<br />the Passes</h3><p>A two-week Himalayan odyssey for riders who want the full story—the wild roads and the quieter chapters.</p><a href="contact.html?journey=Beyond%20the%20Passes" aria-label="Enquire about Beyond the Passes">Discover the route <span>↗</span></a></div></article>
+        </div>
+        <p class="trip-note">Routes are thoughtfully adapted to conditions and group pace. Nepal and Mustang journeys are on the horizon.</p>
+      </section>
+
+      <section class="manifesto">
+        <div class="manifesto-image" role="img" aria-label="High-altitude Himalayan landscape"></div>
+        <div class="manifesto-panel"><p class="eyebrow light">Our north star</p><blockquote>“The goal isn't to conquer the mountains. It's to let them <em>guide you.</em>”</blockquote><p>We keep groups small, choices transparent and the plan flexible enough for the unexpected. Because the best part of the ride is often the part nobody could schedule.</p></div>
+      </section>
+
+      <section class="ride-principles">
+        <div class="section-label"><span>03</span> What to expect</div>
+        <div class="principles-grid">
+          <article><span>01</span><h3>Ride together</h3><p>Every departure is personally hosted from the road—not managed from behind a desk.</p></article>
+          <article><span>02</span><h3>Keep it human</h3><p>Small groups, genuine local encounters, and room to follow a moment when it matters.</p></article>
+          <article><span>03</span><h3>Spend with care</h3><p>Thoughtful, practical planning aimed at keeping the adventure accessible and the value real.</p></article>
+          <article><span>04</span><h3>Come prepared</h3><p>High-altitude riding demands respect. We will share clear guidance before every journey.</p></article>
+        </div>
+        <figure class="principles-visual"><div class="route-line" aria-hidden="true"></div><p>Every mile leaves a mark.</p><span>Let's → Discover → Your Mark → Together</span></figure>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-photo" role="img" aria-label="Rider with motorcycle in the mountains"></div>
+        <div class="about-copy"><p class="eyebrow">04 · Your host</p><h2>Built by a rider,<br /><i>for riders.</i></h2><p>We've spent years on Himalayan roads—learning their rhythm, their challenges and the extraordinary generosity found along them. Now We want to share that feeling with people who are looking for more than a holiday.</p><p>When you book a Trans-Himalayan Odyssey, We are not simply arranging your ride. We will be part of it.</p><a href="contact.html" class="text-link">Start the conversation <span>→</span></a></div>
+      </section>
+
+      <section class="enquire" id="enquire">
+        <p class="eyebrow light">Ready when you are</p>
+        <h2 class="typewriter" data-typewriter>Your next great road<br /> is <i>waiting.</i></h2>
+        <p>Tell me what kind of ride you have in mind. We’ll begin with a real conversation—no pressure, no generic package.</p>
+        <a class="button button-light" href="configure-your-ride.html">Plan your odyssey <span>↗</span></a>
+        <small>Start with a conversation. Plan the road together.</small>
+      </section>
+    </main>
+
+    <footer>
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 52 42" aria-hidden="true">
+        <path d="M2 35 18 8l8 13 7-10 17 24"/>
+        <path d="M11 35h30"/>
+      </svg>
+      <span>Trans-Himalayan<br><em>Odyssey</em></span>
+    </a>
+
+    <p>Ride beyond the map.</p>
+
+    <div>
+      <a href="#journeys">Journeys</a>
+      <a href="hosts.html">About</a>
+      <a href="contact.html">Contact</a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/trans_himalayan_odyssey/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="icon brands alt fa-instagram"
+        aria-label="Instagram">
+        <span class="label">Instagram</span>
+      </a>
+    </div>
+
+    <small>© <span id="year"></span> Trans-Himalayan Odyssey</small>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

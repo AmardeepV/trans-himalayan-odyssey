@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Configure your ideal Himalayan motorcycle journey with Trans-Himalayan Odyssey." />
+    <title>Configure your ride — Trans-Himalayan Odyssey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .config-page .site-header{position:relative;background:var(--ink);padding:22px 5.4%}.config-main{background:var(--cream)}.config-hero{padding:100px 8% 75px;background:var(--moss);color:var(--cream)}.config-hero h1{font-size:clamp(48px,6vw,86px);letter-spacing:-.07em;line-height:.95;margin:0;max-width:760px}.config-hero>p:not(.eyebrow){font-size:14px;line-height:1.8;color:#dae1da;max-width:510px;margin:25px 0 0}.config-wrap{max-width:1100px;margin:0 auto;padding:78px 6% 105px}.config-form{display:grid;grid-template-columns:repeat(2,1fr);gap:52px 70px}.config-section{border-top:1px solid var(--line);padding-top:19px}.config-section.full{grid-column:1/-1}.config-section h2{font-size:25px;letter-spacing:-.05em;margin:0 0 8px}.config-section>p{font-size:12px;line-height:1.65;color:#667169;margin:0 0 20px}.config-choice{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.config-choice label{display:flex;align-items:center;gap:9px;padding:11px 0;font-size:12px;color:#33423a;border-bottom:1px solid rgba(22,32,28,.1);cursor:pointer}.config-choice input{accent-color:var(--rust)}.config-field{display:flex;flex-direction:column;gap:8px}.config-field label{font:10px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:#59645c}.config-field input,.config-field textarea{border:0;border-bottom:1px solid var(--line);background:transparent;padding:10px 0;color:var(--ink);font:14px Manrope,Arial,sans-serif;outline:none}.config-field textarea{min-height:95px;resize:vertical}.config-field input:focus,.config-field textarea:focus{border-color:var(--rust)}.pass-groups{display:grid;grid-template-columns:repeat(2,1fr);gap:35px}.pass-group h3{font:10px 'DM Mono',monospace;letter-spacing:.09em;text-transform:uppercase;color:var(--rust);margin:0 0 7px}.pass-note{font-size:11px!important;color:#788179!important;margin:25px 0 0!important}.config-submit{grid-column:1/-1;display:flex;align-items:center;gap:20px;padding-top:5px}.config-submit button{border:0;cursor:pointer}.config-link{margin-top:30px;font-size:12px;color:#59645c}.config-link a{color:var(--ink);font-weight:800;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:4px}@media(max-width:720px){.config-hero{padding:75px 8% 62px}.config-wrap{padding:55px 8% 85px}.config-form,.pass-groups{grid-template-columns:1fr;gap:38px}.config-section.full,.config-submit{grid-column:auto}.config-choice{grid-template-columns:1fr}}
+    </style>
+  </head>
+  <body class="config-page">
+    <header class="site-header"><a class="brand" href="index.html" aria-label="Trans-Himalayan Odyssey home"><svg viewBox="0 0 52 42" aria-hidden="true"><path d="M2 35 18 8l8 13 7-10 17 24"/><path d="M11 35h30"/></svg><span>Trans-Himalayan<br /><em>Odyssey</em></span></a><nav class="nav" aria-label="Main navigation"><a href="index.html#journeys">Journeys</a><a href="index.html#about">Your host</a><a href="contact.html">Contact</a></nav></header>
+    <main class="config-main">
+      <section class="config-hero">
+        <p class="eyebrow light">Your road, your rhythm</p>
+        <h1>Configure your<br /><i>odyssey.</i></h1>
+        <p>Choose the ingredients of your dream Himalayan ride. We’ll use your selections as the starting point for a personal route conversation—not as an automatic booking.</p>
+      </section>
+      <div class="config-wrap">
+        <form class="config-form" id="ride-configurator">
+
+          <section class="config-section">
+            <h2>01. Motorcycle</h2>
+            <p>Choose the style that feels right. Exact models are confirmed based on availability and your riding experience.</p>
+            <div class="config-choice">
+              <label>
+                <input type="radio" name="motorcycle" value="Lightweight dual-sport / off-road bike" required /> Lightweight dual-sport</label>
+              <label>
+                <input type="radio" name="motorcycle" value="Midweight adventure bike" /> Midweight adventure</label>
+              <label>
+                <input type="radio" name="motorcycle" value="Classic Himalayan touring bike" /> Classic Himalayan touring</label>
+              <label>
+                <input type="radio" name="motorcycle" value="Please recommend a bike" /> Please recommend</label>
+            </div>
+          </section>
+
+          <section class="config-section">
+            <h2>02. Accommodation</h2>
+            <p>How would you like the day to end?</p>
+            <div class="config-choice">
+              <label>
+                <input type="radio" name="accommodation" value="Hotels and guesthouses" required /> Hotels / guesthouses</label>
+              <label>
+                <input type="radio" name="accommodation" value="Camping" /> Camping</label>
+              <label>
+                <input type="radio" name="accommodation" value="A mix of camping and hotels" /> A mix of both</label>
+              <label>
+                <input type="radio" name="accommodation" value="Keep it flexible" /> Keep it flexible</label>
+            </div>
+          </section>
+          
+          <section class="config-section">
+            <h2>03. Riding gear</h2>
+            <p>Select any gear you would like help with.</p>
+            <div class="config-choice">
+              <label>
+                <input type="checkbox" name="gear" value="I bring all my own gear" /> I bring my own gear</label>
+              <label>
+                <input type="checkbox" name="gear" value="Helmet" /> Helmet</label>
+              <label>
+                <input type="checkbox" name="gear" value="Jacket and gloves" /> Jacket &amp; gloves</label>
+              <label>
+                <input type="checkbox" name="gear" value="Riding boots" /> Riding boots</label>
+              <label>
+                <input type="checkbox" name="gear" value="Please advise on gear" /> Please advise</label>
+            </div>
+          </section>
+          
+          <section class="config-section">
+            <h2>04. Luggage support</h2>
+            <p>Decide how light you want to ride.</p>
+            <div class="config-choice">
+              <label>
+                <input type="radio" name="luggage" value="I travel light with my own luggage" required /> I travel light</label>
+              <label>
+                <input type="radio" name="luggage" value="Luggage transport support" /> Luggage support</label>
+              <label>
+                <input type="radio" name="luggage" value="Support vehicle where route allows" /> Support vehicle</label>
+              <label>
+                <input type="radio" name="luggage" value="Let's discuss" /> Let's discuss</label>
+            </div>
+          </section>
+        
+          <section class="config-section">
+            <h2>05. Food preference</h2>
+            <p>Choose any options that apply.</p>
+            <div class="config-choice">
+              <label>
+                <input type="checkbox" name="food" value="Vegetarian" /> Vegetarian</label>
+              <label>
+                <input type="checkbox" name="food" value="Vegan" /> Vegan</label>
+              <label>
+                <input type="checkbox" name="food" value="No preference" /> No preference</label>
+              <label>
+                <input type="checkbox" name="food" value="Allergies or dietary needs" /> Allergies / dietary needs</label>
+            </div>
+          </section>
+
+          <section class="config-section">
+            <h2>06. Your details</h2>
+            <p>Enough to begin the planning conversation.</p>
+            <div class="config-field">
+              <label for="config-name">Name</label>
+              <input id="config-name" name="name" autocomplete="name" required />
+            </div>
+            <div class="config-field" style="margin-top:18px">
+              <label for="config-email">Email address</label>
+              <input id="config-email" name="email" type="email" autocomplete="email" required />
+            </div>
+          </section>
+          
+          <section class="config-section">
+            <h2>07. Ride movie</h2>
+            <p>
+              Take home more than memories. We collaborate with talented local filmmakers
+              to create a cinematic ride movie of your Himalayan adventure, professionally
+              filmed and edited for you to keep forever.
+            </p>
+
+            <div class="config-choice">
+              <label>
+                <input type="radio" name="ride_movie" value="Yes, I'd like a ride movie" required />
+                Yes, I'd love a ride movie
+              </label>
+
+              <label>
+                <input type="radio" name="ride_movie" value="Maybe, tell me more" />
+                Maybe — I'd like more information
+              </label>
+
+              <label>
+                <input type="radio" name="ride_movie" value="No, not this time" />
+                No, not this time
+              </label>
+            </div>
+          </section>
+
+
+          <section class="config-section full">
+            <h2>08. Mountain passes</h2>
+            <p>Select every major motorcycle route that calls to you. Add an unlisted road below if you have something particular in mind.</p>
+            <div class="pass-groups">
+              <div class="pass-group">
+                <h3>Ladakh / Leh region</h3>
+                <div class="config-choice">
+                  <label>
+                    <input type="checkbox" name="passes" value="Khardung La" /> Khardung La</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Chang La" /> Chang La</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Taglang La" /> Taglang La</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Wari La" /> Wari La</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Digar La" /> Digar La</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Umling La" /> Umling La</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Namika La" /> Namika La</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Fotu La" /> Fotu La</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Pensi La" /> Pensi La</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Nakee La" /> Nakee La</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Lachulung La" /> Lachulung La</label>
+                </div>
+              </div>
+              <div class="pass-group">
+                <h3>Himachal Pradesh</h3>
+                <div class="config-choice">
+                  <label>
+                    <input type="checkbox" name="passes" value="Rohtang Pass" /> Rohtang Pass</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Baralacha La" /> Baralacha La</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Kunzum Pass" /> Kunzum Pass</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Sach Pass" /> Sach Pass</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Jalori Pass" /> Jalori Pass</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Chanshal Pass" /> Chanshal Pass</label>
+                  <label>
+                    <input type="checkbox" name="passes" value="Shipki La (subject to access)" /> Shipki La</label>
+                </div>
+              </div>
+            </div>
+            <p class="pass-note">Road openings, weather, permits and local rules decide what is possible. We will confirm a safe final route together.</p>
+            <div class="config-field" style="margin-top:26px">
+              <label for="route-notes">Other route ideas, dates or requirements</label>
+              <textarea id="route-notes" name="notes" placeholder="For example: I would love to experience local cuisine, or I have one week in September."></textarea>
+            </div>
+          </section>
+
+
+          <div class="config-submit">
+            <button class="button button-light" type="submit">Send my configuration <span>↗</span></button>
+            <p class="form-status" id="config-status" aria-live="polite"></p>
+          </div>
+        </form>
+        
+        <p class="config-link">Not sure what you need yet? <a href="contact.html">Start with a simple conversation →</a></p>
+      </div>
+    </main>
+
+    <footer>
+      <a class="brand" href="#top">
+        <svg viewBox="0 0 52 42" aria-hidden="true">
+          <path d="M2 35 18 8l8 13 7-10 17 24"/>
+          <path d="M11 35h30"/>
+        </svg>
+        <span>Trans-Himalayan<br><em>Odyssey</em></span>
+      </a>
+
+      <p>Ride beyond the map.</p>
+
+      <div>
+        <a href="#journeys">Journeys</a>
+        <a href="hosts.html">About</a>
+        <a href="contact.html">Contact</a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/trans_himalayan_odyssey/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="icon brands alt fa-instagram"
+          aria-label="Instagram">
+          <span class="label">Instagram</span>
+        </a>
+      </div>
+
+      <small>© <span id="year"></span> Trans-Himalayan Odyssey</small>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

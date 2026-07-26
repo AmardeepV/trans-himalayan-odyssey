@@ -1,0 +1,457 @@
+/* ------------------------------------------------ */
+/* Shared Expedition Styles */
+/* ------------------------------------------------ */
+
+:root{
+    --trip-width:1400px;
+}
+
+body{
+    background:var(--cream);
+}
+
+/* ---------------- HERO ---------------- */
+
+.trip-hero{
+    position:relative;
+    height:72vh;
+    min-height:560px;
+    overflow:hidden;
+}
+
+.trip-hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    animation:heroZoom 10s ease forwards;
+}
+
+.trip-overlay{
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.72),
+            rgba(0,0,0,.18)
+        );
+}
+
+.trip-title{
+    position:absolute;
+    left:8%;
+    bottom:70px;
+    color:white;
+    max-width:700px;
+}
+
+.trip-title h1{
+    font-size:clamp(54px,7vw,92px);
+    line-height:.95;
+    letter-spacing:-.06em;
+    margin:10px 0;
+}
+
+.trip-title p:last-child{
+    max-width:520px;
+    font-size:16px;
+    line-height:1.8;
+    color:rgba(255,255,255,.88);
+}
+
+/* ---------------- LAYOUT ---------------- */
+
+.trip-wrapper{
+
+    max-width:var(--trip-width);
+
+    margin:auto;
+
+    padding:80px 5%;
+
+    display:grid;
+
+    grid-template-columns:35% 65%;
+
+    gap:60px;
+
+}
+
+/* ---------------- LEFT ---------------- */
+
+.trip-sidebar{
+
+    position:sticky;
+
+    top:40px;
+
+    align-self:start;
+
+}
+
+.trip-sidebar h2{
+
+    font-size:42px;
+
+    line-height:1.05;
+
+    margin-top:0;
+
+    letter-spacing:-.05em;
+
+}
+
+.trip-route{
+
+    font-size:15px;
+
+    line-height:2;
+
+    color:var(--moss);
+
+    font-weight:700;
+
+    margin-bottom:35px;
+
+}
+
+.sidebar-card{
+
+    background:white;
+
+    padding:28px;
+
+    border-radius:16px;
+
+    margin-bottom:24px;
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.05);
+
+}
+
+.sidebar-card h3{
+
+    margin-top:0;
+
+    font-size:23px;
+
+    letter-spacing:-.03em;
+
+}
+
+.sidebar-card p{
+
+    line-height:1.9;
+
+    color:#55635b;
+
+}
+
+.sidebar-card ul{
+
+    padding-left:18px;
+
+    margin:0;
+
+}
+
+.sidebar-card li{
+
+    margin:14px 0;
+
+    line-height:1.8;
+
+    color:#55635b;
+
+}
+
+/* ---------------- ROUTE NOTE ---------------- */
+
+.route-note{
+
+    background:var(--moss);
+
+    color:white;
+
+    padding:30px;
+
+    border-radius:16px;
+
+}
+
+.route-note h3{
+
+    margin-top:0;
+
+    color:#efb18e;
+
+}
+
+.route-note p{
+
+    line-height:1.9;
+
+    margin:0;
+
+    color:#dfe7df;
+
+}
+
+/* ---------------- RIGHT ---------------- */
+
+.trip-content{
+
+    min-height:800px;
+
+}
+
+.day-buttons{
+    display:grid;
+    grid-template-columns:repeat(7, 1fr);
+    gap:12px;
+    width:100%;
+    margin-bottom:35px;
+}
+
+.day-buttons button{
+    width:100%;
+    padding:14px 10px;
+    border:none;
+    border-radius:999px;
+    background:#d8d4ca;
+    color:var(--ink);
+    font-weight:800;
+    font-size:13px;
+    cursor:pointer;
+    transition:.3s ease;
+}
+
+.day-buttons button.active{
+    background:var(--rust);
+    color:#fff;
+}
+
+.day-buttons button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ---------------- DAY CARD ---------------- */
+
+#day-content{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    box-shadow:
+
+    0 18px 45px rgba(0,0,0,.06);
+
+}
+
+#day-content h2{
+
+    font-size:42px;
+
+    letter-spacing:-.05em;
+
+    margin-top:0;
+
+}
+
+#day-content p{
+
+    line-height:1.9;
+
+    color:#55635b;
+
+}
+
+/* ---------------- INFO GRID ---------------- */
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+    margin:35px 0;
+
+}
+
+.info-card{
+
+    background:#f8f6f2;
+
+    border-radius:14px;
+
+    padding:22px;
+
+}
+
+.info-card small{
+
+    display:block;
+
+    color:#8a948d;
+
+    font-family:'DM Mono',monospace;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+    margin-bottom:8px;
+
+}
+
+.info-card strong{
+
+    font-size:22px;
+
+}
+
+/* ---------------- HIGHLIGHTS ---------------- */
+
+.highlights{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+
+    margin-top:25px;
+
+}
+
+.highlight{
+
+    background:#f7f5f0;
+
+    padding:18px;
+
+    border-left:4px solid var(--rust);
+
+    border-radius:12px;
+
+    font-weight:700;
+
+}
+
+/* ---------------- ANIMATION ---------------- */
+
+@keyframes heroZoom{
+
+    from{
+
+        transform:scale(1.15);
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width:1000px){
+
+.trip-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.trip-sidebar{
+
+position:relative;
+
+top:auto;
+
+}
+
+.info-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.trip-title{
+
+left:7%;
+
+right:7%;
+
+bottom:45px;
+
+}
+
+.trip-title h1{
+
+font-size:58px;
+
+}
+
+}
+
+@media (max-width:650px){
+
+.trip-hero{
+
+height:55vh;
+
+min-height:420px;
+
+}
+
+.info-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.highlights{
+
+grid-template-columns:1fr;
+
+}
+
+#day-content{
+
+padding:28px;
+
+}
+
+.trip-sidebar h2{
+
+font-size:34px;
+
+}
+
+.trip-title h1{
+
+font-size:48px;
+
+}
+
+.trip-title p:last-child{
+
+font-size:15px;
+
+}
+
+}

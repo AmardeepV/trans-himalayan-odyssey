@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Beyond the Passes | Trans-Himalayan Odyssey</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="stylesheet" href="trip.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<a class="brand" href="index.html">
+
+<svg viewBox="0 0 52 42">
+<path d="M2 35 18 8l8 13 7-10 17 24"/>
+<path d="M11 35h30"/>
+</svg>
+
+<span>
+
+Trans-Himalayan
+
+<br>
+
+<em>Odyssey</em>
+
+</span>
+
+</a>
+
+<nav class="nav">
+
+<a href="index.html#journeys">Journeys</a>
+<a href="hosts.html">Hosts</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="trip-hero">
+
+<img src="assets/singla.jpeg" alt="Beyond the Passes">
+
+<div class="trip-overlay"></div>
+
+<div class="trip-title">
+
+<p class="eyebrow light">
+
+14 Days • Ultimate Expedition
+
+</p>
+
+<h1>
+
+Beyond<br>
+
+<i>the Passes.</i>
+
+</h1>
+
+<p>
+
+Our most demanding and rewarding expedition.
+
+Cross forgotten mountain passes, ride through Zanskar, Lahaul and the Changthang Plateau before conquering the highest roads in the Himalayas.
+
+</p>
+
+</div>
+
+</section>
+
+<main class="trip-wrapper">
+
+<aside class="trip-sidebar">
+
+<h2>
+
+The Ultimate Himalayan Loop
+
+</h2>
+
+<p class="trip-route">
+
+Leh
+
+→ Lamayuru
+
+→ Wanla
+
+→ Singe La
+
+→ Lingshed
+
+→ Sirsir La
+
+→ Padum
+
+→ Shinku La
+
+→ Darcha
+
+→ Gata Loops
+
+→ Pang
+
+→ Tso Kar
+
+→ Tso Moriri
+
+→ Hanle
+
+→ Umling La
+
+→ Mig La
+
+→ Pangong
+
+→ Nubra Valley
+
+→ Khardung La
+
+→ Leh
+
+</p>
+
+<section class="sidebar-card">
+
+<h3>
+
+Trip Overview
+
+</h3>
+
+<p>
+
+Beyond the Passes is our flagship Trans-Himalayan expedition.
+
+Over fourteen unforgettable days you'll ride across forgotten mountain passes,
+
+discover the remote villages of Zanskar,
+
+cross into Lahaul via Shinku La,
+
+explore the vast Changthang Plateau,
+
+conquer Umling La and Mig La,
+
+experience Pangong and Nubra Valley,
+
+and complete one of India's greatest motorcycle journeys.
+
+</p>
+
+</section>
+
+<section class="sidebar-card">
+
+<h3>
+
+Everything You Need To Know
+
+</h3>
+
+<ul>
+
+<li>Starts and finishes in Leh.</li>
+
+<li>Arrive at least two days early.</li>
+
+<li>Hotels, guesthouses and premium camps.</li>
+
+<li>Breakfast, lunch and dinner included.</li>
+
+<li>Support motorcycle for larger groups.</li>
+
+<li>Fuel included throughout.</li>
+
+<li>Suitable for experienced riders.</li>
+<li>Oxygen tank, drinks, snakes will always be available.</li>
+
+</ul>
+
+</section>
+
+<section class="route-note">
+
+<h3>
+
+Route Note
+
+</h3>
+
+<p>
+
+Mountain weather,
+
+landslides,
+
+military restrictions and permits may require route adjustments.
+
+Our expedition leaders always choose the safest route while preserving the experience.
+
+</p>
+
+</section>
+
+</aside>
+
+<section class="trip-content">
+
+<div class="day-buttons">
+
+<button class="active">Day 1</button>
+
+<button>Day 2</button>
+
+<button>Day 3</button>
+
+<button>Day 4</button>
+
+<button>Day 5</button>
+
+<button>Day 6</button>
+
+<button>Day 7</button>
+
+<button>Day 8</button>
+
+<button>Day 9</button>
+
+<button>Day 10</button>
+
+<button>Day 11</button>
+
+<button>Day 12</button>
+
+<button>Day 13</button>
+
+<button>Day 14</button>
+
+</div>
+
+<div id="day-content">
+
+<h2 id="day-title"></h2>
+
+<p id="day-overview"></p>
+
+<div class="info-grid">
+
+<div class="info-card">
+<small>Distance</small>
+<strong id="day-distance"></strong>
+</div>
+
+<div class="info-card">
+<small>Ride Time</small>
+<strong id="day-time"></strong>
+</div>
+
+<div class="info-card">
+<small>Highest Point</small>
+<strong id="day-altitude"></strong>
+</div>
+
+<div class="info-card">
+<small>Stay</small>
+<strong id="day-stay"></strong>
+</div>
+
+</div>
+
+<h3>Today's Route</h3>
+
+<p id="day-route"></p>
+
+<h3>Highlights</h3>
+
+<div class="highlights" id="day-highlights"></div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 52 42" aria-hidden="true">
+        <path d="M2 35 18 8l8 13 7-10 17 24"/>
+        <path d="M11 35h30"/>
+      </svg>
+      <span>Trans-Himalayan<br><em>Odyssey</em></span>
+    </a>
+
+    <p>Ride beyond the map.</p>
+
+    <div>
+      <a href="#journeys">Journeys</a>
+      <a href="hosts.html">About</a>
+      <a href="contact.html">Contact</a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/trans_himalayan_odyssey/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="icon brands alt fa-instagram"
+        aria-label="Instagram">
+        <span class="label">Instagram</span>
+      </a>
+    </div>
+
+    <small>© <span id="year"></span> Trans-Himalayan Odyssey</small>
+    </footer>
+
+<script>
+
+const itinerary=[
+
+{
+title:"Day 1 · Leh → Lamayuru → Wanla",
+overview:"Begin your ultimate expedition riding west through the Indus Valley, passing Magnetic Hill, Sangam and Moonland before reaching Lamayuru Monastery and the beautiful village of Wanla.",
+distance:"180 km",
+time:"6 Hours",
+altitude:"4,108 m",
+stay:"Wanla",
+route:"Leh → Magnetic Hill → Sangam → Lamayuru → Wanla",
+highlights:[
+"Lamayuru Monastery",
+"Moonland",
+"Magnetic Hill",
+"Sangam",
+"Ancient Villages",
+"Scenic Highway"
+]
+},
+
+{
+title:"Day 2 · Wanla → Singe La → Lingshed",
+overview:"Leave the highway behind and enter one of the least explored regions of Ladakh as you climb Singe La and descend into remote Himalayan villages.",
+distance:"185 km",
+time:"7–8 Hours",
+altitude:"5,091 m",
+stay:"Lingshed",
+route:"Wanla → Photoksar → Singe La → Lingshed",
+highlights:[
+"Singe La",
+"Photoksar",
+"Remote Dirt Roads",
+"Mountain Villages",
+"River Crossings",
+"Adventure Riding"
+]
+},
+
+{
+title:"Day 3 · Lingshed → Sirsir La → Padum",
+overview:"Cross Sirsir La and descend into the spectacular Zanskar Valley where dramatic canyon roads lead towards Padum.",
+distance:"180 km",
+time:"7 Hours",
+altitude:"4,850 m",
+stay:"Padum",
+route:"Lingshed → Sirsir La → Padum",
+highlights:[
+"Sirsir La",
+"Zanskar Valley",
+"Mountain Roads",
+"Padum",
+"Canyon Landscapes",
+"Remote Himalayas"
+]
+},
+
+{
+title:"Day 4 · Explore Zanskar",
+overview:"A relaxed exploration day discovering monasteries, villages and hidden corners of Zanskar while enjoying a break from long-distance riding.",
+distance:"120 km",
+time:"4 Hours",
+altitude:"3,660 m",
+stay:"Padum",
+route:"Padum → Karsha → Stongde → Padum",
+highlights:[
+"Karsha Monastery",
+"Stongde",
+"Local Culture",
+"Photography",
+"River Valleys",
+"Hidden Villages"
+]
+},
+
+{
+title:"Day 5 · Padum → Shinku La → Darcha",
+overview:"Ride one of the newest Himalayan adventure routes crossing Shinku La before descending towards Darcha.",
+distance:"190 km",
+time:"8 Hours",
+altitude:"5,091 m",
+stay:"Darcha",
+route:"Padum → Gombo Rangjon → Shinku La → Darcha",
+highlights:[
+"Shinku La",
+"Gombo Rangjon",
+"River Crossings",
+"Mountain Trails",
+"Lahaul Valley",
+"Adventure Roads"
+]
+},
+
+{
+title:"Day 6 · Darcha → Gata Loops → Pang",
+overview:"Enter the famous Leh–Manali Highway climbing the legendary Gata Loops before reaching Pang.",
+distance:"220 km",
+time:"8 Hours",
+altitude:"4,630 m",
+stay:"Pang",
+route:"Darcha → Baralacha Region → Gata Loops → Pang",
+highlights:[
+"Gata Loops",
+"Mountain Highway",
+"High Altitude",
+"Rock Formations",
+"Epic Curves",
+"Photography"
+]
+},
+
+{
+title:"Day 7 · Pang → Tso Kar → Tso Moriri",
+overview:"Ride across the More Plains before exploring Tso Kar and ending the day beside the crystal-clear waters of Tso Moriri.",
+distance:"210 km",
+time:"7 Hours",
+altitude:"4,595 m",
+stay:"Karzok",
+route:"Pang → More Plains → Tso Kar → Karzok",
+highlights:[
+"More Plains",
+"Tso Kar",
+"Wild Kiang",
+"Tso Moriri",
+"Changpa Nomads",
+"Sunset"
+]
+},
+
+{
+title:"Day 8 · Tso Moriri → Hanle",
+overview:"Continue through the vast Changthang Plateau towards Hanle, one of India's most remote villages.",
+distance:"180 km",
+time:"6 Hours",
+altitude:"4,500 m",
+stay:"Hanle",
+route:"Karzok → Nyoma → Hanle",
+highlights:[
+"Changthang Plateau",
+"Hanle Monastery",
+"Nomadic Settlements",
+"Remote Roads",
+"Wildlife",
+"Night Sky"
+]
+},
+
+{
+title:"Day 9 · Hanle → Umling La → Mig La → Hanle",
+overview:"Today's challenge is conquering Umling La and Mig La before returning to Hanle for another unforgettable Himalayan night.",
+distance:"230 km",
+time:"8 Hours",
+altitude:"5,883 m",
+stay:"Hanle",
+route:"Hanle → Umling La → Mig La → Hanle",
+highlights:[
+"Umling La",
+"Mig La",
+"Border Roads",
+"World's Highest Roads",
+"Adventure Riding",
+"High Altitude"
+]
+},
+
+{
+title:"Day 10 · Hanle → Chushul → Pangong",
+overview:"Ride through Chushul and the Rezang La Memorial before following Pangong Lake to your overnight stay.",
+distance:"210 km",
+time:"7 Hours",
+altitude:"4,595 m",
+stay:"Spangmik",
+route:"Hanle → Chushul → Rezang La → Pangong",
+highlights:[
+"Rezang La",
+"Chushul",
+"Pangong",
+"Photography",
+"Mountain Lakes",
+"Sunset"
+]
+},
+
+{
+title:"Day 11 · Pangong → Shyok → Nubra Valley",
+overview:"Follow the famous Shyok route into Nubra Valley where desert landscapes meet snow-covered mountains.",
+distance:"185 km",
+time:"6 Hours",
+altitude:"4,250 m",
+stay:"Hunder",
+route:"Pangong → Durbuk → Shyok → Hunder",
+highlights:[
+"Shyok Valley",
+"River Roads",
+"Nubra Valley",
+"Diskit",
+"Sand Dunes",
+"Cold Desert"
+]
+},
+
+{
+title:"Day 12 · Nubra Exploration",
+overview:"Spend the day exploring the hidden corners of Nubra Valley including Turtuk or Warshi depending on conditions and permits.",
+distance:"200 km",
+time:"6 Hours",
+altitude:"3,900 m",
+stay:"Hunder",
+route:"Hunder → Turtuk → Hunder",
+highlights:[
+"Turtuk",
+"Border Villages",
+"Local Culture",
+"Apricot Orchards",
+"Scenic Roads",
+"Photography"
+]
+},
+
+{
+title:"Day 13 · Nubra → Khardung La → Leh",
+overview:"Cross Khardung La once more and descend into Leh after completing one of India's greatest motorcycle expeditions.",
+distance:"130 km",
+time:"5 Hours",
+altitude:"5,359 m",
+stay:"Leh",
+route:"Hunder → Khardung La → Leh",
+highlights:[
+"Khardung La",
+"Celebration Ride",
+"Mountain Views",
+"Final Descent",
+"Group Photos",
+"Leh"
+]
+},
+
+{
+title:"Day 14 · Leisure Day in Leh",
+overview:"Keep this day flexible for weather delays, bike maintenance, sightseeing or simply enjoying Leh before your departure.",
+distance:"Flexible",
+time:"As You Wish",
+altitude:"3,500 m",
+stay:"Trip Ends",
+route:"Explore Leh",
+highlights:[
+"Leh Market",
+"Cafés",
+"Shopping",
+"Bike Care",
+"Farewell Dinner",
+"Departure"
+]
+}
+
+];
+
+const buttons=document.querySelectorAll(".day-buttons button");
+
+const title=document.getElementById("day-title");
+const overview=document.getElementById("day-overview");
+const distance=document.getElementById("day-distance");
+const time=document.getElementById("day-time");
+const altitude=document.getElementById("day-altitude");
+const stay=document.getElementById("day-stay");
+const route=document.getElementById("day-route");
+const highlights=document.getElementById("day-highlights");
+
+function loadDay(index){
+
+buttons.forEach((button,i)=>{
+
+button.classList.toggle("active",i===index);
+
+});
+
+const day=itinerary[index];
+
+title.textContent=day.title;
+overview.textContent=day.overview;
+distance.textContent=day.distance;
+time.textContent=day.time;
+altitude.textContent=day.altitude;
+stay.textContent=day.stay;
+route.textContent=day.route;
+
+highlights.innerHTML="";
+
+day.highlights.forEach(item=>{
+
+const div=document.createElement("div");
+
+div.className="highlight";
+
+div.textContent="✓ "+item;
+
+highlights.appendChild(div);
+
+});
+
+}
+
+buttons.forEach((button,index)=>{
+
+button.addEventListener("click",()=>{
+
+loadDay(index);
+
+});
+
+});
+
+loadDay(0);
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>High Pass Sampler | Trans-Himalayan Odyssey</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="trip.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<a class="brand" href="index.html">
+
+<svg viewBox="0 0 52 42" aria-hidden="true">
+
+<path d="M2 35 18 8l8 13 7-10 17 24"/>
+
+<path d="M11 35h30"/>
+
+</svg>
+
+<span>
+
+Trans-Himalayan
+
+<br>
+
+<em>Odyssey</em>
+
+</span>
+
+</a>
+
+<nav class="nav">
+
+<a href="index.html#journeys">Journeys</a>
+
+<a href="hosts.html">Hosts</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="trip-hero">
+
+<img src="assets/nubra.png" alt="Shyok Valley">
+
+<div class="trip-overlay"></div>
+
+<div class="trip-title">
+
+<p class="eyebrow light">
+
+4 Days • Introduction
+
+</p>
+
+<h1>
+
+High Pass<br>
+
+<i>Sampler.</i>
+
+</h1>
+
+<p>
+
+The perfect first Himalayan expedition through Ladakh's most iconic landscapes.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTENT -->
+
+<main class="trip-wrapper">
+
+
+
+
+<!-- LEFT -->
+
+<aside class="trip-sidebar">
+
+<h2>
+
+Historic & Scenic Ride
+
+</h2>
+
+<p class="trip-route">
+
+Leh
+
+→ Khardung La
+
+→ Nubra Valley
+
+→ Shyok Valley
+
+→ Pangong Lake
+
+→ Rezang La
+
+→ Changthang Plateau
+
+→ Tso Moriri
+
+→ Puga Valley
+
+→ Chumathang
+
+→ Leh
+
+</p>
+
+
+
+<section class="sidebar-card">
+
+<h3>Trip Overview</h3>
+
+<p>
+
+Embark on an unforgettable four-day expedition through the heart of Ladakh.
+
+Ride over legendary Himalayan passes, explore the cold desert of Nubra,
+
+follow the spectacular Shyok River, witness the changing colours of Pangong,
+
+discover the remote Changthang Plateau, spend a peaceful night at Tso Moriri,
+
+and complete the journey through the geothermal beauty of Puga Valley.
+
+</p>
+
+</section>
+
+
+
+<section class="sidebar-card">
+
+<h3>
+
+Here's everything you need to know
+
+</h3>
+
+<ul>
+
+<li>
+
+Trip starts from <strong>Leh</strong>.
+
+</li>
+
+<li>
+
+Arrive at least
+
+<strong>2 days before</strong>
+
+the ride to acclimatize.
+
+</li>
+
+<li>
+
+Choice of
+
+Hotels,
+
+Camping
+
+or both.
+
+</li>
+
+<li>
+
+Breakfast,
+
+Lunch
+
+and
+
+Dinner
+
+included during the expedition.
+
+</li>
+
+<li>
+
+Backup motorcycle for groups larger than 4 riders.
+
+Smaller groups carry tools and spare parts.
+
+</li>
+
+<li>
+
+Fuel included throughout the ride.
+
+</li>
+<li>
+Oxygen tank, drinks, snakes will always be available.
+</li>
+
+</ul>
+
+</section>
+
+
+
+<section class="route-note">
+
+<h3>
+
+Route Note
+
+</h3>
+
+<p>
+
+Our preferred itinerary follows the spectacular
+
+Chushul–Tso Moriri circuit.
+
+If weather,
+
+permits
+
+or road conditions require changes,
+
+we'll adapt the route while ensuring you experience
+
+the very best of Ladakh safely.
+
+</p>
+
+</section>
+
+</aside>
+
+
+
+
+
+<!-- RIGHT -->
+
+<section class="trip-content">
+
+<div class="day-buttons">
+
+<button class="active">
+
+Day 1
+
+</button>
+
+<button>
+
+Day 2
+
+</button>
+
+<button>
+
+Day 3
+
+</button>
+
+<button>
+
+Day 4
+
+</button>
+
+</div>
+
+
+
+<div id="day-content">
+
+<h2 id="day-title"></h2>
+
+<p id="day-overview"></p>
+
+<div class="info-grid">
+
+<div class="info-card">
+<small>Distance</small>
+<strong id="day-distance"></strong>
+</div>
+
+<div class="info-card">
+<small>Ride Time</small>
+<strong id="day-time"></strong>
+</div>
+
+<div class="info-card">
+<small>Highest Point</small>
+<strong id="day-altitude"></strong>
+</div>
+
+<div class="info-card">
+<small>Overnight Stay</small>
+<strong id="day-stay"></strong>
+</div>
+
+</div>
+
+<h3>Today's Route</h3>
+
+<p id="day-route"></p>
+
+<h3>Highlights</h3>
+
+<div class="highlights" id="day-highlights"></div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 52 42" aria-hidden="true">
+        <path d="M2 35 18 8l8 13 7-10 17 24"/>
+        <path d="M11 35h30"/>
+      </svg>
+      <span>Trans-Himalayan<br><em>Odyssey</em></span>
+    </a>
+
+    <p>Ride beyond the map.</p>
+
+    <div>
+      <a href="#journeys">Journeys</a>
+      <a href="hosts.html">About</a>
+      <a href="contact.html">Contact</a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/trans_himalayan_odyssey/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="icon brands alt fa-instagram"
+        aria-label="Instagram">
+        <span class="label">Instagram</span>
+      </a>
+    </div>
+
+    <small>© <span id="year"></span> Trans-Himalayan Odyssey</small>
+    </footer>
+
+<script>
+const itinerary = [
+
+{
+
+title:"Day 1 · Leh → Khardung La → Nubra Valley",
+
+overview:
+"Your adventure begins in Leh before climbing towards the legendary Khardung La, one of the world's highest motorable mountain passes. After soaking in breathtaking Himalayan views, descend into the cold desert of Nubra Valley, visiting Diskit Monastery and finishing the day among the sand dunes of Hunder.",
+
+distance:"130 km",
+
+time:"5–6 Hours",
+
+altitude:"5,359 m",
+
+stay:"Hunder",
+
+route:
+"Leh → South Pullu → Khardung La → North Pullu → Diskit → Hunder",
+
+highlights:[
+
+"Khardung La",
+
+"Diskit Monastery",
+
+"Hunder Sand Dunes",
+
+"Bactrian Camels",
+
+"Cold Desert",
+
+"Sunset in Nubra"
+
+]
+
+},
+
+{
+
+title:"Day 2 · Nubra Valley → Pangong Lake",
+
+overview:
+"Leave Nubra behind and ride alongside the spectacular Shyok River. The constantly changing scenery eventually opens up to reveal the deep blue waters of Pangong Lake, one of the most iconic destinations in Ladakh.",
+
+distance:"170 km",
+
+time:"6–7 Hours",
+
+altitude:"4,250 m",
+
+stay:"Spangmik",
+
+route:
+"Hunder → Agham → Shyok → Durbuk → Tangtse → Pangong",
+
+highlights:[
+
+"Shyok Valley",
+
+"Pangong Lake",
+
+"Mountain Rivers",
+
+"Remote Villages",
+
+"Photography",
+
+"Sunset"
+
+]
+
+},
+
+{
+
+title:"Day 3 · Pangong → Tso Moriri",
+
+overview:
+"Today's ride explores one of the least-travelled parts of Ladakh. Cross Chushul, pay tribute at the Rezang La War Memorial and continue across the vast Changthang Plateau before arriving in the peaceful village of Karzok on the shores of Tso Moriri.",
+
+distance:"190 km",
+
+time:"7–8 Hours",
+
+altitude:"4,595 m",
+
+stay:"Karzok",
+
+route:
+"Pangong → Chushul → Rezang La → Tsaga → Mahe → Sumdo → Karzok",
+
+highlights:[
+
+"Chushul",
+
+"Rezang La",
+
+"Changthang Plateau",
+
+"Tso Moriri",
+
+"Changpa Nomads",
+
+"Milky Way Night"
+
+]
+
+},
+
+{
+
+title:"Day 4 · Karzok → Leh",
+
+overview:
+"The final day completes the Himalayan loop through the colourful geothermal landscapes of Puga Valley before following the Indus River back to Leh. A perfect finale to four unforgettable days in the mountains.",
+
+distance:"220 km",
+
+time:"7 Hours",
+
+altitude:"4,700 m",
+
+stay:"Trip Ends",
+
+route:
+"Karzok → Puga Valley → Chumathang → Upshi → Leh",
+
+highlights:[
+
+"Puga Valley",
+
+"Hot Springs",
+
+"Wild Kiang",
+
+"Indus Valley",
+
+"Scenic Ride",
+
+"Return to Leh"
+
+]
+
+}
+
+];
+
+const buttons=document.querySelectorAll(".day-buttons button");
+
+const title=document.getElementById("day-title");
+
+const overview=document.getElementById("day-overview");
+
+const distance=document.getElementById("day-distance");
+
+const time=document.getElementById("day-time");
+
+const altitude=document.getElementById("day-altitude");
+
+const stay=document.getElementById("day-stay");
+
+const route=document.getElementById("day-route");
+
+const highlights=document.getElementById("day-highlights");
+
+function loadDay(index){
+
+buttons.forEach((button,i)=>{
+
+button.classList.toggle("active",i===index);
+
+});
+
+const day=itinerary[index];
+
+title.textContent=day.title;
+
+overview.textContent=day.overview;
+
+distance.textContent=day.distance;
+
+time.textContent=day.time;
+
+altitude.textContent=day.altitude;
+
+stay.textContent=day.stay;
+
+route.textContent=day.route;
+
+highlights.innerHTML="";
+
+day.highlights.forEach(item=>{
+
+const div=document.createElement("div");
+
+div.className="highlight";
+
+div.textContent="✓ "+item;
+
+highlights.appendChild(div);
+
+});
+
+}
+
+buttons.forEach((button,index)=>{
+
+button.addEventListener("click",()=>{
+
+loadDay(index);
+
+});
+
+});
+
+loadDay(0);
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

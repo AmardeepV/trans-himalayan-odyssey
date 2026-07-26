@@ -1,3 +1,3 @@
 # Trans-Himalayan Odyssey
 
-Checkout this -> https://amardeepv.github.io/trans-himalayan-odyssey/
+Checkout this -> https://transhimalayanodyssey.com

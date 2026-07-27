@@ -50,9 +50,7 @@
                                                                     letter-spacing:.11em;
                                                                     font-size:10px;font-weight:500;
                                                                     margin:0 0 20px;
-                                                                    color:var(--rust)}.eyebrow.light{color:#f1b08f}.hero h1{font-size:clamp(54px,7.2vw,105px);line-height:1.08;.hero h1 i{
-    display:inline-block;
-}
+                                                                    color:var(--rust)}.eyebrow.light{color:#f1b08f}.hero h1{font-size:clamp(54px,7.2vw,105px);line-height:1.08;
                                                                         letter-spacing:-.065em;margin:0}.hero h1 i,h2 i,.display-copy em,blockquote em{font-family:'Playfair Display',serif;font-weight:600;
                                                                             letter-spacing:-.055em}.hero-copy{max-width:450px;
                                                                                 font-size:15px;

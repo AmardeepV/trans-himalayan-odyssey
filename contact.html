@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Contact Trans-Himalayan Odyssey to begin planning a Himalayan motorcycle journey." />
@@ -10,79 +11,112 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <style>
-      .contact-page .site-header{position:relative;background:var(--ink);padding:22px 5.4%}.contact-main{min-height:calc(100vh - 88px);display:grid;grid-template-columns:.9fr 1.1fr;background:var(--cream)}.contact-intro{background:var(--moss);color:var(--cream);padding:13% 14%;display:flex;flex-direction:column;justify-content:space-between}.contact-intro h1{font-size:clamp(48px,5.6vw,78px);line-height:1;letter-spacing:-.065em;margin:0}.contact-intro p:not(.eyebrow){font-size:14px;line-height:1.8;max-width:380px;color:#d9e0d9}.contact-form-wrap{padding:11% 13%;max-width:720px}.contact-form-wrap h2{font-size:32px;letter-spacing:-.05em;margin:0 0 10px}.contact-form-wrap>p{font-size:13px;line-height:1.7;color:#59645c;margin:0 0 35px}.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:21px}.field{display:flex;flex-direction:column;gap:8px}.field.full{grid-column:1/-1}.field label{font:10px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:#59645c}.field input,.field select,.field textarea{width:100%;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;padding:11px 0;color:var(--ink);font:14px Manrope,Arial,sans-serif;outline:none}.field textarea{min-height:102px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--rust)}.contact-form button{border:0;cursor:pointer;justify-self:start;margin-top:10px}.form-status{grid-column:1/-1;font-size:12px;line-height:1.6;color:#59645c;margin:0}.contact-note{font:10px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#7a847d;margin-top:28px}@media(max-width:720px){.contact-main{grid-template-columns:1fr}.contact-intro{padding:80px 9%;gap:45px}.contact-form-wrap{padding:70px 9%}.contact-form{grid-template-columns:1fr}.field.full{grid-column:auto}}
+        .contact-page .site-header{position:relative;background:var(--ink);padding:22px 5.4%}.contact-main{min-height:calc(100vh - 88px);display:grid;grid-template-columns:.9fr 1.1fr;background:var(--cream)}.contact-intro{background:var(--moss);color:var(--cream);padding:13% 14%;display:flex;flex-direction:column;justify-content:space-between}.contact-intro h1{font-size:clamp(48px,5.6vw,78px);line-height:1;letter-spacing:-.065em;margin:0}.contact-intro p:not(.eyebrow){font-size:14px;line-height:1.8;max-width:380px;color:#d9e0d9}.contact-form-wrap{padding:11% 13%;max-width:720px}.contact-form-wrap h2{font-size:32px;letter-spacing:-.05em;margin:0 0 10px}.contact-form-wrap>p{font-size:13px;line-height:1.7;color:#59645c;margin:0 0 35px}.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:21px}.field{display:flex;flex-direction:column;gap:8px}.field.full{grid-column:1/-1}.field label{font:10px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:#59645c}.field input,.field select,.field textarea{width:100%;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;padding:11px 0;color:var(--ink);font:14px Manrope,Arial,sans-serif;outline:none}.field textarea{min-height:102px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--rust)}.contact-form button{border:0;cursor:pointer;justify-self:start;margin-top:10px}.form-status{grid-column:1/-1;font-size:12px;line-height:1.6;color:#59645c;margin:0}.contact-note{font:10px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#7a847d;margin-top:28px}@media(max-width:720px){.contact-main{grid-template-columns:1fr}.contact-intro{padding:80px 9%;gap:45px}.contact-form-wrap{padding:70px 9%}.contact-form{grid-template-columns:1fr}.field.full{grid-column:auto}}
     </style>
-  </head>
-  <body class="contact-page">
+</head>
+
+<body class="contact-page">
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Trans-Himalayan Odyssey home">
-        <svg viewBox="0 0 52 42" aria-hidden="true">
-          <path d="M2 35 18 8l8 13 7-10 17 24"/>
-          <path d="M11 35h30"/>
-        </svg>
-        <span>Trans-Himalayan<br />
-          <em>Odyssey</em>
-        </span>
-      </a>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="index.html#journeys">Journeys</a>
-        <a href="hosts.html">Your host</a>
-      </nav>
+        <a class="brand" href="index.html" aria-label="Trans-Himalayan Odyssey home">
+            <svg viewBox="0 0 52 42" aria-hidden="true">
+                <path d="M2 35 18 8l8 13 7-10 17 24" />
+                <path d="M11 35h30" />
+            </svg>
+            <span>Trans-Himalayan<br /><em>Odyssey</em></span>
+        </a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="index.html#journeys">Journeys</a><a href="index.html#why-us">The way we ride</a><a href="index.html#about">Stories</a><a class="nav-cta" href="contact.html">Plan a ride <span>↗</span></a>
+        </nav>
     </header>
 
     <main class="contact-main">
-      <section class="contact-intro">
-        <div>
-          <p class="eyebrow light">Start the conversation</p>
-          <h1>The road is<br />
-            <i>calling.</i>
-          </h1>
-        </div>
-        <p>Tell me where your curiosity is taking you. I’ll read every request personally, then we can schedule a call to shape the right Himalayan journey.</p>
-      </section>
-      <section class="contact-form-wrap">
-        <h2>Plan your odyssey</h2>
-        <p>There is no obligation—just a first conversation between riders.</p>
-        <form class="contact-form" id="enquiry-form">
-          <div class="field">
-            <label for="name">Your name</label>
-            <input id="name" name="name" autocomplete="name" required />
-          </div>
-          <div class="field">
-            <label for="email">Email address</label>
-            <input id="email" name="email" type="email" autocomplete="email" required />
-          </div>
-          <div class="field">
-            <label for="journey">Journey</label>
-            <select id="journey" name="journey">
-              <option value="Not sure yet">Not sure yet</option>
-              <option>High Pass Sampler · 04 days</option>
-              <option>Ladakh Unbound · 07 days</option>
-              <option>Beyond the Passes · 14 days</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="riders">Number of riders</label>
-            <select id="riders" name="riders">
-              <option>Just me</option>
-              <option>2 riders</option>
-              <option>3–5 riders</option>
-              <option>6+ riders</option>
-            </select>
-          </div>
-          <div class="field full">
-            <label for="message">What kind of ride are you dreaming about?</label>
-            <textarea id="message" name="message" required placeholder="Dates, riding experience, questions—anything useful."></textarea>
-          </div>
-          <button class="button button-light" type="submit">Send enquiry <span>↗</span></button>
-          <p class="form-status" id="form-status" aria-live="polite"></p>
-        </form>
+        <section class="contact-intro">
+            <div>
+                <p class="eyebrow light">Start the conversation</p>
+                <h1>The road is<br />
+                    <i>calling.</i>
+                </h1>
+            </div>
+            <p>Tell me where your curiosity is taking you. I’ll read every request personally, then we can schedule a call to shape the right Himalayan journey.</p>
+        </section>
+        <section class="contact-form-wrap">
+            <h2>Plan your odyssey</h2>
+            <p>There is no obligation—just a first conversation between riders.</p>
+            <form class="contact-form" id="enquiry-form">
+                <div class="field">
+                    <label for="name">Your name</label>
+                    <input id="name" name="name" autocomplete="name" required />
+                </div>
+                <div class="field">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="field">
+                    <label for="journey">Journey</label>
+                    <select id="journey" name="journey">
+                        <option value="Not sure yet">Not sure yet</option>
+                        <option>High Pass Sampler · 04 days</option>
+                        <option>Ladakh Unbound · 07 days</option>
+                        <option>Beyond the Passes · 14 days</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="riders">Number of riders</label>
+                    <select id="riders" name="riders">
+                        <option>Just me</option>
+                        <option>2 riders</option>
+                        <option>3–5 riders</option>
+                        <option>6+ riders</option>
+                    </select>
+                </div>
+                <div class="field full">
+                    <label for="message">What kind of ride are you dreaming about?</label>
+                    <textarea id="message" name="message" required placeholder="Dates, riding experience, questions—anything useful."></textarea>
+                </div>
+                <button class="button button-light" type="submit">Send enquiry <span>↗</span></button>
+                <p class="form-status" id="form-status" aria-live="polite"></p>
+            </form>
 
-        <p class="config-link">Already know your ideal setup? <a href="configure-your-ride.html">Configure your ride →</a></p>
-      </section>
+            <p class="config-link">Already know your ideal setup? <a href="configure-your-ride.html">Configure your ride →</a></p>
+        </section>
     </main>
 
-    
+    <footer>
+
+        <a class="brand" href="index.html">
+
+            <svg viewBox="0 0 52 42" aria-hidden="true">
+                <path d="M2 35 18 8l8 13 7-10 17 24" />
+                <path d="M11 35h30" />
+            </svg>
+
+            <span>
+                Trans-Himalayan<br>
+                <em>Odyssey</em>
+            </span>
+        </a>
+        <p>
+            Ride Beyond the Map.
+        </p>
+        <div>
+            <a href="contact.html">Contact</a>
+            <a href="insurance-safety.html">Insurance & Safety</a>
+            <a href="faq.html">FAQ</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms & Conditions</a>
+            <a href="cookie-policy.html">Cookie Policy</a>
+            <a href="https://www.instagram.com/trans_himalayan_odyssey/" target="_blank" rel="noopener noreferrer">
+
+                Instagram
+            </a>
+        </div>
+
+        <small>
+            © <span id="year"></span> Trans-Himalayan Odyssey. All Rights Reserved.
+        </small>
+    </footer>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

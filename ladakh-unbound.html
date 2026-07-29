@@ -3,661 +3,637 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ladakh Unbound | Trans-Himalayan Odyssey</title>
+    <title>Ladakh Unbound | Trans-Himalayan Odyssey</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="trip.css">
-<style>
-
-/* ------------------------------------------------ */
-/* HIGH PASS SAMPLER */
-/* ------------------------------------------------ */
-
-:root{
-    --trip-width:1400px;
-}
-
-body{
-    background:var(--cream);
-}
-
-/* ---------------- HERO ---------------- */
-
-.trip-hero{
-    position:relative;
-    height:72vh;
-    min-height:560px;
-    overflow:hidden;
-}
-
-.trip-hero img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    animation:heroZoom 10s ease forwards;
-}
-
-.trip-overlay{
-    position:absolute;
-    inset:0;
-    background:
-        linear-gradient(
-            to top,
-            rgba(0,0,0,.72),
-            rgba(0,0,0,.18)
-        );
-}
-
-@media (max-width:650px){
-
-.trip-hero{
-
-height:55vh;
-
-min-height:420px;
-
-}
-
-.day-buttons{
-
-flex-wrap:wrap;
-
-}
-
-.day-buttons button{
-
-flex:1 1 calc(50% - 10px);
-
-}
-
-.info-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.highlights{
-
-grid-template-columns:1fr;
-
-}
-
-#day-content{
-
-padding:28px;
-
-}
-
-.trip-sidebar h2{
-
-font-size:34px;
-
-}
-
-.trip-title h1{
-
-font-size:48px;
-
-}
-
-.trip-title p:last-child{
-
-font-size:15px;
-
-}
-
-}
-
-</style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="trip.css">
+    <style>
+        /* ------------------------------------------------ */
+        /* HIGH PASS SAMPLER */
+        /* ------------------------------------------------ */
+        
+        :root{
+            --trip-width:1400px;
+        }
+        
+        body{
+            background:var(--cream);
+        }
+        
+        /* ---------------- HERO ---------------- */
+        
+        .trip-hero{
+            position:relative;
+            height:72vh;
+            min-height:560px;
+            overflow:hidden;
+        }
+        
+        .trip-hero img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            animation:heroZoom 10s ease forwards;
+        }
+        
+        .trip-overlay{
+            position:absolute;
+            inset:0;
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(0,0,0,.72),
+                    rgba(0,0,0,.18)
+                );
+        }
+        
+        @media (max-width:650px){
+        
+        .trip-hero{
+        
+        height:55vh;
+        
+        min-height:420px;
+        
+        }
+        
+        .day-buttons{
+        
+        flex-wrap:wrap;
+        
+        }
+        
+        .day-buttons button{
+        
+        flex:1 1 calc(50% - 10px);
+        
+        }
+        
+        .info-grid{
+        
+        grid-template-columns:1fr;
+        
+        }
+        
+        .highlights{
+        
+        grid-template-columns:1fr;
+        
+        }
+        
+        #day-content{
+        
+        padding:28px;
+        
+        }
+        
+        .trip-sidebar h2{
+        
+        font-size:34px;
+        
+        }
+        
+        .trip-title h1{
+        
+        font-size:48px;
+        
+        }
+        
+        .trip-title p:last-child{
+        
+        font-size:15px;
+        
+        }
+        
+        }
+        
+    </style>
 
 </head>
 
 <body>
 
-<header class="site-header">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Trans-Himalayan Odyssey home">
+            <svg viewBox="0 0 52 42" aria-hidden="true">
+                <path d="M2 35 18 8l8 13 7-10 17 24" />
+                <path d="M11 35h30" />
+            </svg>
+            <span>Trans-Himalayan<br /><em>Odyssey</em></span>
+        </a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="index.html#journeys">Journeys</a><a href="index.html#why-us">The way we ride</a><a href="index.html#about">Stories</a><a class="nav-cta" href="contact.html">Plan a ride <span>↗</span></a>
+        </nav>
+    </header>
 
-<a class="brand" href="index.html">
+    <!-- HERO -->
 
-<svg viewBox="0 0 52 42">
-<path d="M2 35 18 8l8 13 7-10 17 24"/>
-<path d="M11 35h30"/>
-</svg>
+    <section class="trip-hero">
 
-<span>
-Trans-Himalayan
-<br>
-<em>Odyssey</em>
-</span>
+        <img src="assets/pangong.jpeg" alt="Ladakh Unbound">
 
-</a>
+        <div class="trip-overlay"></div>
 
-<nav class="nav">
+        <div class="trip-title">
 
-<a href="index.html#journeys">Journeys</a>
-<a href="hosts.html">Hosts</a>
-<a href="contact.html">Contact</a>
+            <p class="eyebrow light">
 
-</nav>
+                7 Days • Signature Expedition
 
-</header>
+            </p>
 
-<!-- HERO -->
+            <h1>
 
-<section class="trip-hero">
+                Ladakh<br>
 
-<img src="assets/pangong.jpeg" alt="Ladakh Unbound">
+                <i>Unbound.</i>
 
-<div class="trip-overlay"></div>
+            </h1>
 
-<div class="trip-title">
+            <p>
 
-<p class="eyebrow light">
+                Seven unforgettable days through Ladakh's highest passes, hidden valleys, remote campsites and pristine lakes. Built for riders seeking a true Himalayan expedition.
 
-7 Days • Signature Expedition
+            </p>
 
-</p>
+        </div>
 
-<h1>
+    </section>
 
-Ladakh<br>
+    <!-- MAIN -->
 
-<i>Unbound.</i>
+    <main class="trip-wrapper">
 
-</h1>
+        <!-- LEFT PANEL -->
 
-<p>
+        <aside class="trip-sidebar">
 
-Seven unforgettable days through Ladakh's highest passes, hidden valleys, remote campsites and pristine lakes. Built for riders seeking a true Himalayan expedition.
+            <h2>
 
-</p>
+                Signature Himalayan Loop
 
-</div>
+            </h2>
 
-</section>
+            <p class="trip-route">
 
-<!-- MAIN -->
+                Leh
 
-<main class="trip-wrapper">
+                → Khardung La
 
-<!-- LEFT PANEL -->
+                → Nubra Valley
 
-<aside class="trip-sidebar">
+                → Wari La
 
-<h2>
+                → Durbuk
 
-Signature Himalayan Loop
+                → Shyok River Camp
 
-</h2>
+                → Pangong Lake
 
-<p class="trip-route">
+                → Chushul
 
-Leh
+                → Hanle
 
-→ Khardung La
+                → Umling La
 
-→ Nubra Valley
+                → Nyoma
 
-→ Wari La
+                → Tso Moriri
 
-→ Durbuk
+                → Puga Valley
 
-→ Shyok River Camp
+                → Tso Kar
 
-→ Pangong Lake
+                → Tanglang La
 
-→ Chushul
+                → Leh
 
-→ Hanle
+            </p>
 
-→ Umling La
+            <section class="sidebar-card">
 
-→ Nyoma
+                <h3>Trip Overview</h3>
 
-→ Tso Moriri
+                <p>
 
-→ Puga Valley
+                    Ladakh Unbound is our signature expedition through the most spectacular landscapes of the Trans-Himalaya. Ride across legendary mountain passes, camp beside the Shyok River, explore Pangong Lake, traverse the remote Changthang Plateau, conquer Umling La and complete the journey through Tso Moriri, Puga Valley and Tso Kar before returning to Leh.
 
-→ Tso Kar
+                </p>
 
-→ Tanglang La
+            </section>
 
-→ Leh
+            <section class="sidebar-card">
 
-</p>
+                <h3>
 
-<section class="sidebar-card">
+                    Everything You Need To Know
 
-<h3>Trip Overview</h3>
+                </h3>
 
-<p>
+                <ul>
+                    <li>Trip starts from <strong>Leh</strong>.</li>
+                    <li>Arrive at least <strong>2 days before</strong> the ride to acclimatize.</li>
+                    <li>Choice of Hotels, Camping or both.</li>
+                    <li>Breakfast, Lunch and Dinner included during the expedition.</li>
+                    <li>Backup motorcycle for groups larger than 4 riders. Smaller groups carry tools and spare parts.</li>
+                    <li>Fuel included throughout the ride.</li>
+                    <li>Oxygen tank, drinks, snakes will always be available.</li>
+                    <li>Third-Party Road Liability Insurance included with every motorcycle.</li>
+                    <li>Optional Collision Damage Waiver (CDW) available (€300 per rider) or refundable €200 / ₹18,000 security deposit.</li>
+                </ul>
 
-Ladakh Unbound is our signature expedition through the most spectacular landscapes of the Trans-Himalaya. Ride across legendary mountain passes, camp beside the Shyok River, explore Pangong Lake, traverse the remote Changthang Plateau, conquer Umling La and complete the journey through Tso Moriri, Puga Valley and Tso Kar before returning to Leh.
+            </section>
 
-</p>
+            <section class="route-note">
 
-</section>
+                <h3>Route Note</h3>
 
-<section class="sidebar-card">
+                <p>
 
-<h3>
+                    The preferred itinerary follows Wari La, Pangong, Hanle, Umling La and the Tso Moriri circuit. Weather, military restrictions, permits and road conditions may require adjustments while preserving the expedition experience.
 
-Everything You Need To Know
+                </p>
 
-</h3>
+            </section>
 
-<ul>
-  <li>Trip starts from <strong>Leh</strong>.</li>
-  <li>Arrive at least <strong>2 days before</strong> the ride to acclimatize.</li>
-  <li>Choice of Hotels, Camping or both.</li>
-  <li>Breakfast, Lunch and Dinner included during the expedition.</li>
-  <li>Backup motorcycle for groups larger than 4 riders. Smaller groups carry tools and spare parts.</li>
-  <li>Fuel included throughout the ride.</li>
-  <li>Oxygen tank, drinks, snakes will always be available.</li>
-  <li>Third-Party Road Liability Insurance included with every motorcycle.</li>
-  <li>Optional Collision Damage Waiver (CDW) available (€300 per rider) or refundable €200 / ₹18,000 security deposit.</li>
-</ul>
+        </aside>
 
-</section>
+        <!-- RIGHT PANEL -->
 
-<section class="route-note">
+        <section class="trip-content">
 
-<h3>Route Note</h3>
+            <div class="day-buttons">
 
-<p>
+                <button class="active">Day 1</button>
 
-The preferred itinerary follows Wari La, Pangong, Hanle, Umling La and the Tso Moriri circuit. Weather, military restrictions, permits and road conditions may require adjustments while preserving the expedition experience.
+                <button>Day 2</button>
 
-</p>
+                <button>Day 3</button>
 
-</section>
+                <button>Day 4</button>
 
-</aside>
+                <button>Day 5</button>
 
-<!-- RIGHT PANEL -->
+                <button>Day 6</button>
 
-<section class="trip-content">
+                <button>Day 7</button>
 
-<div class="day-buttons">
+            </div>
 
-<button class="active">Day 1</button>
+            <div id="day-content">
 
-<button>Day 2</button>
+                <h2 id="day-title"></h2>
 
-<button>Day 3</button>
+                <p id="day-overview"></p>
 
-<button>Day 4</button>
+                <div class="info-grid">
 
-<button>Day 5</button>
+                    <div class="info-card">
+                        <small>Distance</small>
+                        <strong id="day-distance"></strong>
+                    </div>
 
-<button>Day 6</button>
+                    <div class="info-card">
+                        <small>Ride Time</small>
+                        <strong id="day-time"></strong>
+                    </div>
 
-<button>Day 7</button>
+                    <div class="info-card">
+                        <small>Highest Point</small>
+                        <strong id="day-altitude"></strong>
+                    </div>
 
-</div>
+                    <div class="info-card">
+                        <small>Overnight Stay</small>
+                        <strong id="day-stay"></strong>
+                    </div>
 
-<div id="day-content">
+                </div>
 
-<h2 id="day-title"></h2>
+                <h3>Today's Route</h3>
 
-<p id="day-overview"></p>
+                <p id="day-route"></p>
 
-<div class="info-grid">
+                <h3>Highlights</h3>
 
-<div class="info-card">
-<small>Distance</small>
-<strong id="day-distance"></strong>
-</div>
+                <div class="highlights" id="day-highlights"></div>
 
-<div class="info-card">
-<small>Ride Time</small>
-<strong id="day-time"></strong>
-</div>
+            </div>
 
-<div class="info-card">
-<small>Highest Point</small>
-<strong id="day-altitude"></strong>
-</div>
+        </section>
 
-<div class="info-card">
-<small>Overnight Stay</small>
-<strong id="day-stay"></strong>
-</div>
+    </main>
 
-</div>
+    <footer>
 
-<h3>Today's Route</h3>
+        <a class="brand" href="index.html">
 
-<p id="day-route"></p>
+            <svg viewBox="0 0 52 42" aria-hidden="true">
+                <path d="M2 35 18 8l8 13 7-10 17 24" />
+                <path d="M11 35h30" />
+            </svg>
 
-<h3>Highlights</h3>
+            <span>
+                Trans-Himalayan<br>
+                <em>Odyssey</em>
+            </span>
+        </a>
+        <p>
+            Ride Beyond the Map.
+        </p>
+        <div>
+            <a href="contact.html">Contact</a>
+            <a href="insurance-safety.html">Insurance & Safety</a>
+            <a href="faq.html">FAQ</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms & Conditions</a>
+            <a href="cookie-policy.html">Cookie Policy</a>
+            <a href="https://www.instagram.com/trans_himalayan_odyssey/" target="_blank" rel="noopener noreferrer">
 
-<div class="highlights" id="day-highlights"></div>
+                Instagram
+            </a>
+        </div>
 
-</div>
-
-</section>
-
-</main>
-
-<footer>
-    <a class="brand" href="index.html">
-      <svg viewBox="0 0 52 42" aria-hidden="true">
-        <path d="M2 35 18 8l8 13 7-10 17 24"/>
-        <path d="M11 35h30"/>
-      </svg>
-      <span>Trans-Himalayan<br><em>Odyssey</em></span>
-    </a>
-
-    <p>Ride beyond the map.</p>
-
-    <div>
-      <a href="index.html#journeys">Journeys</a>
-      <a href="hosts.html">About</a>
-      <a href="contact.html">Contact</a>
-
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/trans_himalayan_odyssey/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="icon brands alt fa-instagram"
-        aria-label="Instagram">
-        <span class="label">Instagram</span>
-      </a>
-    </div>
-
-    <small>© <span id="year"></span> Trans-Himalayan Odyssey</small>
+        <small>
+            © <span id="year"></span> Trans-Himalayan Odyssey. All Rights Reserved.
+        </small>
     </footer>
 
-<script>
+    <script>
+        const itinerary = [
 
-const itinerary=[
+            {
 
-{
+                title: "Day 1 · Leh → Khardung La → Nubra Valley",
 
-title:"Day 1 · Leh → Khardung La → Nubra Valley",
+                overview: "Begin your signature expedition by riding across the legendary Khardung La before descending into the spectacular Nubra Valley. Visit the towering Maitreya Buddha at Diskit Monastery and finish the day surrounded by the dunes of Hunder.",
 
-overview:
-"Begin your signature expedition by riding across the legendary Khardung La before descending into the spectacular Nubra Valley. Visit the towering Maitreya Buddha at Diskit Monastery and finish the day surrounded by the dunes of Hunder.",
+                distance: "130 km",
 
-distance:"130 km",
+                time: "5–6 Hours",
 
-time:"5–6 Hours",
+                altitude: "5,359 m",
 
-altitude:"5,359 m",
+                stay: "Hunder",
 
-stay:"Hunder",
+                route: "Leh → South Pullu → Khardung La → North Pullu → Diskit → Hunder",
 
-route:
-"Leh → South Pullu → Khardung La → North Pullu → Diskit → Hunder",
+                highlights: [
+                    "Khardung La",
+                    "Diskit Monastery",
+                    "Hunder Sand Dunes",
+                    "Bactrian Camels",
+                    "Cold Desert",
+                    "Nubra Valley"
+                ]
 
-highlights:[
-"Khardung La",
-"Diskit Monastery",
-"Hunder Sand Dunes",
-"Bactrian Camels",
-"Cold Desert",
-"Nubra Valley"
-]
+            },
 
-},
+            {
 
-{
+                title: "Day 2 · Nubra Valley → Wari La → Durbuk → Shyok River Camp",
 
-title:"Day 2 · Nubra Valley → Wari La → Durbuk → Shyok River Camp",
+                overview: "Leave the popular tourist routes behind and climb over the remote Wari La Pass. Descend through isolated valleys to Durbuk before reaching a peaceful riverside campsite along the Shyok River for an unforgettable night beneath the Himalayan sky.",
 
-overview:
-"Leave the popular tourist routes behind and climb over the remote Wari La Pass. Descend through isolated valleys to Durbuk before reaching a peaceful riverside campsite along the Shyok River for an unforgettable night beneath the Himalayan sky.",
+                distance: "205 km",
 
-distance:"205 km",
+                time: "7–8 Hours",
 
-time:"7–8 Hours",
+                altitude: "5,312 m",
 
-altitude:"5,312 m",
+                stay: "Shyok River Camp",
 
-stay:"Shyok River Camp",
+                route: "Hunder → Khalsar → Agham → Wari La → Sakti → Durbuk → Shyok Riverside Camp",
 
-route:
-"Hunder → Khalsar → Agham → Wari La → Sakti → Durbuk → Shyok Riverside Camp",
+                highlights: [
+                    "Wari La Pass",
+                    "Remote Mountain Roads",
+                    "River Crossing",
+                    "Wild Camping",
+                    "Campfire Evening",
+                    "Star-filled Sky"
+                ]
 
-highlights:[
-"Wari La Pass",
-"Remote Mountain Roads",
-"River Crossing",
-"Wild Camping",
-"Campfire Evening",
-"Star-filled Sky"
-]
+            },
 
-},
+            {
 
-{
+                title: "Day 3 · Shyok River Camp → Pangong Lake",
 
-title:"Day 3 · Shyok River Camp → Pangong Lake",
+                overview: "Wake beside the river before continuing toward Pangong Lake. Spend the afternoon exploring the shoreline, discovering quiet viewpoints and enjoying one of Ladakh's most iconic landscapes at a relaxed pace.",
 
-overview:
-"Wake beside the river before continuing toward Pangong Lake. Spend the afternoon exploring the shoreline, discovering quiet viewpoints and enjoying one of Ladakh's most iconic landscapes at a relaxed pace.",
+                distance: "185 km",
 
-distance:"185 km",
+                time: "5–6 Hours",
 
-time:"5–6 Hours",
+                altitude: "4,250 m",
 
-altitude:"4,250 m",
+                stay: "Spangmik",
 
-stay:"Spangmik",
+                route: "Shyok Camp → Durbuk → Tangtse → Lukung → Spangmik",
 
-route:
-"Shyok Camp → Durbuk → Tangtse → Lukung → Spangmik",
+                highlights: [
+                    "Pangong Lake",
+                    "Lakeside Ride",
+                    "Photography Stops",
+                    "Blue Waters",
+                    "Sunset Views",
+                    "Local Villages"
+                ]
 
-highlights:[
-"Pangong Lake",
-"Lakeside Ride",
-"Photography Stops",
-"Blue Waters",
-"Sunset Views",
-"Local Villages"
-]
+            },
 
-},
+            {
 
-{
+                title: "Day 4 · Pangong → Chushul → Hanle",
 
-title:"Day 4 · Pangong → Chushul → Hanle",
+                overview: "Ride beside Pangong before entering the remote Changthang region. Pass through Chushul, visit the Rezang La War Memorial and continue across endless Himalayan plains to the peaceful village of Hanle.",
 
-overview:
-"Ride beside Pangong before entering the remote Changthang region. Pass through Chushul, visit the Rezang La War Memorial and continue across endless Himalayan plains to the peaceful village of Hanle.",
+                distance: "210 km",
 
-distance:"210 km",
+                time: "7 Hours",
 
-time:"7 Hours",
+                altitude: "4,595 m",
 
-altitude:"4,595 m",
+                stay: "Hanle",
 
-stay:"Hanle",
+                route: "Pangong → Chushul → Rezang La → Tsaga → Hanle",
 
-route:
-"Pangong → Chushul → Rezang La → Tsaga → Hanle",
+                highlights: [
+                    "Chushul",
+                    "Rezang La Memorial",
+                    "Changthang Plateau",
+                    "Hanle Monastery",
+                    "Remote Landscapes",
+                    "Wildlife"
+                ]
 
-highlights:[
-"Chushul",
-"Rezang La Memorial",
-"Changthang Plateau",
-"Hanle Monastery",
-"Remote Landscapes",
-"Wildlife"
-]
+            },
 
-},
+            {
 
-{
+                title: "Day 5 · Hanle → Umling La → Nyoma",
 
-title:"Day 5 · Hanle → Umling La → Nyoma",
+                overview: "Today's ride is the highlight of the expedition. Climb towards Umling La, one of the world's highest motorable roads, before descending across remote military roads to Nyoma.",
 
-overview:
-"Today's ride is the highlight of the expedition. Climb towards Umling La, one of the world's highest motorable roads, before descending across remote military roads to Nyoma.",
+                distance: "220 km",
 
-distance:"220 km",
+                time: "8 Hours",
 
-time:"8 Hours",
+                altitude: "5,883 m",
 
-altitude:"5,883 m",
+                stay: "Nyoma",
 
-stay:"Nyoma",
+                route: "Hanle → Photi La → Umling La → Demchok Road → Nyoma",
 
-route:
-"Hanle → Photi La → Umling La → Demchok Road → Nyoma",
+                highlights: [
+                    "Umling La",
+                    "World-class Riding",
+                    "High Altitude",
+                    "Mountain Vistas",
+                    "Adventure Riding",
+                    "Remote Border Roads"
+                ]
 
-highlights:[
-"Umling La",
-"World-class Riding",
-"High Altitude",
-"Mountain Vistas",
-"Adventure Riding",
-"Remote Border Roads"
-]
+            },
 
-},
+            {
 
-{
+                title: "Day 6 · Nyoma → Tso Moriri",
 
-title:"Day 6 · Nyoma → Tso Moriri",
+                overview: "Follow the upper Indus Valley before turning towards the crystal-clear waters of Tso Moriri. End the day in the charming village of Karzok overlooking one of India's most beautiful alpine lakes.",
 
-overview:
-"Follow the upper Indus Valley before turning towards the crystal-clear waters of Tso Moriri. End the day in the charming village of Karzok overlooking one of India's most beautiful alpine lakes.",
+                distance: "195 km",
 
-distance:"195 km",
+                time: "6 Hours",
 
-time:"6 Hours",
+                altitude: "4,595 m",
 
-altitude:"4,595 m",
+                stay: "Karzok",
 
-stay:"Karzok",
+                route: "Nyoma → Mahe → Sumdo → Karzok",
 
-route:
-"Nyoma → Mahe → Sumdo → Karzok",
+                highlights: [
+                    "Tso Moriri",
+                    "Karzok Village",
+                    "Changpa Nomads",
+                    "Blue Lake",
+                    "Peaceful Evening",
+                    "Mountain Wildlife"
+                ]
 
-highlights:[
-"Tso Moriri",
-"Karzok Village",
-"Changpa Nomads",
-"Blue Lake",
-"Peaceful Evening",
-"Mountain Wildlife"
-]
+            },
 
-},
+            {
 
-{
+                title: "Day 7 · Karzok → Puga Valley → Tso Kar → Tanglang La → Leh",
 
-title:"Day 7 · Karzok → Puga Valley → Tso Kar → Tanglang La → Leh",
+                overview: "Complete the expedition by crossing the geothermal landscapes of Puga Valley, visiting the beautiful Tso Kar Lake and riding over Tanglang La before returning triumphantly to Leh.",
 
-overview:
-"Complete the expedition by crossing the geothermal landscapes of Puga Valley, visiting the beautiful Tso Kar Lake and riding over Tanglang La before returning triumphantly to Leh.",
+                distance: "235 km",
 
-distance:"235 km",
+                time: "7–8 Hours",
 
-time:"7–8 Hours",
+                altitude: "5,328 m",
 
-altitude:"5,328 m",
+                stay: "Expedition Ends",
 
-stay:"Expedition Ends",
+                route: "Karzok → Puga Valley → Tso Kar → More Plains → Tanglang La → Upshi → Leh",
 
-route:
-"Karzok → Puga Valley → Tso Kar → More Plains → Tanglang La → Upshi → Leh",
+                highlights: [
+                    "Puga Valley",
+                    "Tso Kar",
+                    "Wild Kiang",
+                    "Tanglang La",
+                    "More Plains",
+                    "Return to Leh"
+                ]
 
-highlights:[
-"Puga Valley",
-"Tso Kar",
-"Wild Kiang",
-"Tanglang La",
-"More Plains",
-"Return to Leh"
-]
+            }
 
-}
+        ];
 
-];
+        const buttons = document.querySelectorAll(".day-buttons button");
 
-const buttons=document.querySelectorAll(".day-buttons button");
+        const title = document.getElementById("day-title");
 
-const title=document.getElementById("day-title");
+        const overview = document.getElementById("day-overview");
 
-const overview=document.getElementById("day-overview");
+        const distance = document.getElementById("day-distance");
 
-const distance=document.getElementById("day-distance");
+        const time = document.getElementById("day-time");
 
-const time=document.getElementById("day-time");
+        const altitude = document.getElementById("day-altitude");
 
-const altitude=document.getElementById("day-altitude");
+        const stay = document.getElementById("day-stay");
 
-const stay=document.getElementById("day-stay");
+        const route = document.getElementById("day-route");
 
-const route=document.getElementById("day-route");
+        const highlights = document.getElementById("day-highlights");
 
-const highlights=document.getElementById("day-highlights");
+        function loadDay(index) {
 
-function loadDay(index){
+            buttons.forEach((button, i) => {
 
-buttons.forEach((button,i)=>{
+                button.classList.toggle("active", i === index);
 
-button.classList.toggle("active",i===index);
+            });
 
-});
+            const day = itinerary[index];
 
-const day=itinerary[index];
+            title.textContent = day.title;
 
-title.textContent=day.title;
+            overview.textContent = day.overview;
 
-overview.textContent=day.overview;
+            distance.textContent = day.distance;
 
-distance.textContent=day.distance;
+            time.textContent = day.time;
 
-time.textContent=day.time;
+            altitude.textContent = day.altitude;
 
-altitude.textContent=day.altitude;
+            stay.textContent = day.stay;
 
-stay.textContent=day.stay;
+            route.textContent = day.route;
 
-route.textContent=day.route;
+            highlights.innerHTML = "";
 
-highlights.innerHTML="";
+            day.highlights.forEach(item => {
 
-day.highlights.forEach(item=>{
+                const div = document.createElement("div");
 
-const div=document.createElement("div");
+                div.className = "highlight";
 
-div.className="highlight";
+                div.textContent = "✓ " + item;
 
-div.textContent="✓ "+item;
+                highlights.appendChild(div);
 
-highlights.appendChild(div);
+            });
 
-});
+        }
 
-}
+        buttons.forEach((button, index) => {
 
-buttons.forEach((button,index)=>{
+            button.addEventListener("click", () => {
 
-button.addEventListener("click",()=>{
+                loadDay(index);
 
-loadDay(index);
+            });
 
-});
+        });
 
-});
+        loadDay(0);
+    </script>
 
-loadDay(0);
-
-</script>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

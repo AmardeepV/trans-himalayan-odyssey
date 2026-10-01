@@ -1,2 +1,228 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Stories, routes and field notes from Trans-Himalayan Odyssey." /><title>Journal — Trans-Himalayan Odyssey</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" /><link rel="stylesheet" href="styles.css" /><style>.journal-page .site-header{position:relative;background:var(--ink);padding:22px 5.4%}.journal-hero{padding:110px 8% 90px;background:var(--cream)}.journal-hero h1{font-size:clamp(52px,7vw,98px);line-height:.94;letter-spacing:-.075em;margin:0;max-width:800px}.journal-hero>p:not(.eyebrow){font-size:14px;line-height:1.8;max-width:490px;margin:28px 0 0;color:#59645c}.journal-grid{padding:0 5.4% 120px;background:var(--cream);display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.journal-card{background:#e7ddcd;color:var(--ink);text-decoration:none;display:flex;flex-direction:column;min-height:470px;transition:transform .25s ease}.journal-card:hover{transform:translateY(-5px)}.journal-card-image{height:260px;background-size:cover;background-position:center}.journal-card:first-child .journal-card-image{background-image:url('assets/himalayan-motorcycle-group-hero.png')}.journal-card:nth-child(2) .journal-card-image{background-image:url('assets/rider.jpg');background-position:center 72%}.journal-card:nth-child(3) .journal-card-image{background-image:url('assets/pangong.jpeg')}.journal-card-copy{padding:24px 27px 29px;display:flex;flex:1;flex-direction:column}.journal-meta{font:10px 'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--rust)}.journal-card h2{font-size:31px;line-height:1.02;letter-spacing:-.055em;margin:18px 0 10px}.journal-card p{font-size:12.5px;line-height:1.7;color:#536057;margin:0}.read-more{margin-top:auto;padding-top:22px;font-size:11px;text-transform:uppercase;font-weight:800;letter-spacing:.05em}.read-more span{float:right;color:var(--rust);font-size:17px}@media(max-width:720px){.journal-hero{padding:75px 8% 60px}.journal-grid{padding:0 6% 80px;grid-template-columns:1fr}.journal-card{min-height:0}.journal-card-copy{min-height:230px}}</style></head><body class="journal-page"><div class="page-grain" aria-hidden="true"></div><header class="site-header"><a class="brand" href="index.html" aria-label="Trans-Himalayan Odyssey home"><svg viewBox="0 0 52 42" aria-hidden="true"><path d="M2 35 18 8l8 13 7-10 17 24"/><path d="M11 35h30"/></svg><span>Trans-Himalayan<br /><em>Odyssey</em></span></a><nav class="nav" aria-label="Main navigation"><a href="index.html#journeys">Journeys</a><a href="hosts.html">Stories</a><a href="blog.html" aria-current="page">Journal</a><a class="nav-cta" href="configure-your-ride.html">Plan a ride <span>↗</span></a></nav></header><main><section class="journal-hero"><p class="eyebrow">The Trans-Himalayan journal</p><h1>Notes from<br /><i>the road.</i></h1><p>Routes, field notes, practical advice and the moments that make a Himalayan ride more than a trip.</p></section><section class="journal-grid"><a class="journal-card" href="blog/first-ride.html"><div class="journal-card-image"></div><div class="journal-card-copy"><span class="journal-meta">Field note · 5 min read</span><h2>Why the Himalayan road changes you</h2><p>A first dispatch from the high mountains—and why the journey matters as much as the destination.</p><span class="read-more">Read the story <span>↗</span></span></div></a><a class="journal-card" href="blog/first-ride.html"><div class="journal-card-image"></div><div class="journal-card-copy"><span class="journal-meta">Guide · Coming soon</span><h2>What to pack for a high-altitude ride</h2><p>The equipment, layers and small details that make a serious difference on the road.</p><span class="read-more">Coming soon <span>→</span></span></div></a><a class="journal-card" href="blog/first-ride.html"><div class="journal-card-image"></div><div class="journal-card-copy"><span class="journal-meta">Route · Coming soon</span><h2>Beyond the pass: riding into Zanskar</h2><p>A road of dust, river crossings, unreal valleys and the pleasure of taking it slowly.</p><span class="read-more">Coming soon <span>→</span></span></div></a></section></main><footer><a class="brand" href="index.html"><svg viewBox="0 0 52 42" aria-hidden="true"><path d="M2 35 18 8l8 13 7-10 17 24"/><path d="M11 35h30"/></svg><span>Trans-Himalayan<br /><em>Odyssey</em></span></a><p>Ride beyond the map.</p><div><a href="blog.html">Journal</a><a href="contact.html">Contact</a><a href="faq.html">FAQ</a></div><small>© <span id="year"></span> Trans-Himalayan Odyssey</small></footer><script src="script.js"></script></body></html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+         name="description"
+         content="Stories, routes and field notes from Trans-Himalayan Odyssey."
+      />
+      <title>Journal — Trans-Himalayan Odyssey</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="styles.css" />
+      <style>
+         .journal-page .site-header {
+            position: relative;
+            background: var(--ink);
+            padding: 22px 5.4%;
+         }
+         .journal-hero {
+            padding: 110px 8% 90px;
+            background: var(--cream);
+         }
+         .journal-hero h1 {
+            font-size: clamp(52px, 7vw, 98px);
+            line-height: 0.94;
+            letter-spacing: -0.075em;
+            margin: 0;
+            max-width: 800px;
+         }
+         .journal-hero > p:not(.eyebrow) {
+            font-size: 14px;
+            line-height: 1.8;
+            max-width: 490px;
+            margin: 28px 0 0;
+            color: #59645c;
+         }
+         .journal-grid {
+            padding: 0 5.4% 120px;
+            background: var(--cream);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+         }
+         .journal-card {
+            background: #e7ddcd;
+            color: var(--ink);
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            min-height: 470px;
+            transition: transform 0.25s ease;
+         }
+         .journal-card:hover {
+            transform: translateY(-5px);
+         }
+         .journal-card-image {
+            height: 260px;
+            background-size: cover;
+            background-position: center;
+         }
+         .journal-card:first-child .journal-card-image {
+            background-image: url("assets/himalayan-motorcycle-group-hero.png");
+         }
+         .journal-card:nth-child(2) .journal-card-image {
+            background-image: url("assets/rider.jpg");
+            background-position: center 72%;
+         }
+         .journal-card:nth-child(3) .journal-card-image {
+            background-image: url("assets/pangong.jpeg");
+         }
+         .journal-card-copy {
+            padding: 24px 27px 29px;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+         }
+         .journal-meta {
+            font:
+               10px "DM Mono",
+               monospace;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--rust);
+         }
+         .journal-card h2 {
+            font-size: 31px;
+            line-height: 1.02;
+            letter-spacing: -0.055em;
+            margin: 18px 0 10px;
+         }
+         .journal-card p {
+            font-size: 12.5px;
+            line-height: 1.7;
+            color: #536057;
+            margin: 0;
+         }
+         .read-more {
+            margin-top: auto;
+            padding-top: 22px;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+         }
+         .read-more span {
+            float: right;
+            color: var(--rust);
+            font-size: 17px;
+         }
+         @media (max-width: 720px) {
+            .journal-hero {
+               padding: 75px 8% 60px;
+            }
+            .journal-grid {
+               padding: 0 6% 80px;
+               grid-template-columns: 1fr;
+            }
+            .journal-card {
+               min-height: 0;
+            }
+            .journal-card-copy {
+               min-height: 230px;
+            }
+         }
+      </style>
+   </head>
+   <body class="journal-page">
+      <div class="page-grain" aria-hidden="true"></div>
+      <header class="site-header">
+         <a
+            class="brand"
+            href="index.html"
+            aria-label="Trans-Himalayan Odyssey home"
+            ><svg viewBox="0 0 52 42" aria-hidden="true">
+               <path d="M2 35 18 8l8 13 7-10 17 24" />
+               <path d="M11 35h30" /></svg
+            ><span>Trans-Himalayan<br /><em>Odyssey</em></span></a
+         >
+         <nav class="nav" aria-label="Main navigation">
+            <a href="index.html#journeys">Journeys</a
+            ><a href="hosts.html">Stories</a
+            ><a href="blog.html" aria-current="page">Journal</a
+            ><a class="nav-cta" href="configure-your-ride.html"
+               >Plan a ride <span>↗</span></a
+            >
+         </nav>
+      </header>
+      <main>
+         <section class="journal-hero">
+            <p class="eyebrow">The Trans-Himalayan journal</p>
+            <h1>Notes from<br /><i>the road.</i></h1>
+            <p>
+               Routes, field notes, practical advice and the moments that make a
+               Himalayan ride more than a trip.
+            </p>
+         </section>
+         <section class="journal-grid">
+            <a class="journal-card" href="blog/how-to-reach-leh.html"
+               ><div class="journal-card-image"></div>
+               <div class="journal-card-copy">
+                  <span class="journal-meta">Travel guide · 4 min read</span>
+                  <h2>How to reach Leh: from Europe to the top of the world</h2>
+                  <p>
+                     The simplest way to arrive from Europe: fly to Delhi,
+                     pause, then take the spectacular flight into Leh.
+                  </p>
+                  <span class="read-more">Read the story <span>↗</span></span>
+               </div></a
+            ><a class="journal-card" href="blog/first-ride.html"
+               ><div class="journal-card-image"></div>
+               <div class="journal-card-copy">
+                  <span class="journal-meta">Guide · Coming soon</span>
+                  <h2>What to pack for a high-altitude ride</h2>
+                  <p>
+                     The equipment, layers and small details that make a serious
+                     difference on the road.
+                  </p>
+                  <span class="read-more">Coming soon <span>→</span></span>
+               </div></a
+            ><a class="journal-card" href="blog/first-ride.html"
+               ><div class="journal-card-image"></div>
+               <div class="journal-card-copy">
+                  <span class="journal-meta">Route · Coming soon</span>
+                  <h2>Beyond the pass: riding into Zanskar</h2>
+                  <p>
+                     A road of dust, river crossings, unreal valleys and the
+                     pleasure of taking it slowly.
+                  </p>
+                  <span class="read-more">Coming soon <span>→</span></span>
+               </div></a
+            >
+         </section>
+      </main>
+          <footer>
+        <a class="brand" href="#top">
+            <svg viewBox="0 0 52 42" aria-hidden="true">
+                <path d="M2 35 18 8l8 13 7-10 17 24" />
+                <path d="M11 35h30" />
+            </svg>
+            <span>Trans-Himalayan<br><em>Odyssey</em></span>
+        </a>
+
+        <p>Ride beyond the map.</p>
+
+        <div>
+            <a href="blog.html">Journal</a>
+            <a href="contact.html">Contact</a>
+            <a href="insurance-safety.html">Insurance & Safety</a>
+            <a href="faq.html">FAQ</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms & Conditions</a>
+            <a href="cookie-policy.html">Cookie Policy</a>
+            <a href="https://www.instagram.com/trans_himalayan_odyssey/" target="_blank" rel="noopener noreferrer">
+
+                Instagram
+            </a>
+        </div>
+
+        <small>© <span id="year"></span> Trans-Himalayan Odyssey</small>
+    </footer>
+      <script src="script.js"></script>
+   </body>
+</html>

@@ -489,6 +489,26 @@ blockquote em {
     margin-top: 12px
 }
 
+.home-journal {
+    padding: 115px 8%;
+    background: var(--cream);
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 11%;
+    align-items: center
+}
+
+.home-journal h2 { font-size: clamp(42px, 5.5vw, 75px); line-height: 1; letter-spacing: -.065em; margin: 0 }
+.home-journal-intro>p:not(.eyebrow) { font-size: 13px; line-height: 1.8; max-width: 310px; color: #566158; margin: 25px 0 0 }
+.home-journal-feature { display: grid; grid-template-columns: 220px 1fr; column-gap: 24px; align-items: stretch; color: var(--ink); text-decoration: none; transition: transform .25s ease }
+.home-journal-feature:hover { transform: translateY(-5px) }
+.home-journal-image { min-height: 190px; background: url('assets/himalayan-motorcycle-group-hero.png') center/cover }
+.home-journal-copy { display: flex; flex-direction: column; padding: 8px 0 }
+.home-journal-copy span { font: 10px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; color: var(--rust) }
+.home-journal-copy h3 { font-size: 28px; line-height: 1.05; letter-spacing: -.05em; margin: 15px 0 }
+.home-journal-copy b { margin-top: auto; font-size: 11px; text-transform: uppercase; letter-spacing: .05em }
+.home-journal-copy em { float: right; color: var(--rust); font-size: 17px; font-style: normal }
+
 .enquire {
     padding: 125px 8%;
     background: var(--rust);
@@ -641,6 +661,11 @@ footer small {
     .journeys {
         padding: 78px 6%
     }
+
+    .home-journal { padding: 85px 7%; grid-template-columns: 1fr; gap: 42px }
+    .home-journal-feature { grid-template-columns: 1fr }
+    .home-journal-image { min-height: 230px }
+    .home-journal-copy { min-height: 175px }
 
     .trip-grid {
         grid-template-columns: 1fr
